@@ -1,10 +1,10 @@
 Name:           cppkafka
 Version:        %{VERSION}
 Release:        %{RELEASE}%{?dist}
-Summary:        The Vector Optimized Library of Kernels 
+Summary:        Modern C++ Apache Kafka client library (wrapper for librdkafka)
 Group:          System Environment/Libraries
 License:	BSD
-URL:            https://github.com/gnuradio/volk
+URL:            https://github.com/mfontanini/cppkafka
 Source:         %{name}-%{version}.tar.gz      
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  cmake3
