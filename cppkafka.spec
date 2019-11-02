@@ -3,11 +3,11 @@ Version:        %{VERSION}
 Release:        %{RELEASE}%{?dist}
 Summary:        Modern C++ Apache Kafka client library (wrapper for librdkafka)
 Group:          System Environment/Libraries
-License:	BSD
+License:		BSD
 URL:            https://github.com/mfontanini/cppkafka
 Source:         %{name}-%{version}.tar.gz      
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires:  cmake3
+BuildRequires:  cmake
 BuildRequires:  librdkafka-devel
 
 %description
@@ -17,6 +17,7 @@ Modern C++ Apache Kafka client library (wrapper for librdkafka)
 Summary:	%{name} development package
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
+Requires: 	librdkafka-devel 
 
 %description devel
 Development files for %{name}.
